@@ -77,9 +77,13 @@ Pneumonia adalah salah satu penyakit infeksi yang menyerang paru-paru dan dapat 
 
 Untuk mendeteksi pneumonia, citra medis, terutama menggunakan X-ray dada, adalah salah satu metode yang paling umum digunakan. Pada paru-paru yang sehat, tampak kontras yang jelas antara jaringan paru dan udara yang terisi di dalam alveoli. Pada citra X-ray, paru-paru sehat muncul gelap karena udara mengisi alveoli, sedangkan jaringan lunak atau organ lain tidak dapat terlihat dengan jelas. Namun, pada paru-paru yang terinfeksi pneumonia, perubahan struktur paru-paru terjadi, dan area infeksi atau peradangan akan terlihat lebih terang pada gambar X-ray karena akumulasi cairan, eksudat, dan sel-sel inflamasi yang mengisi alveoli. Infiltrasi atau konsolidasi ini mengurangi efisiensi pertukaran oksigen, menyebabkan gangguan pernapasan dan menurunnya kadar oksigen dalam darah (Li et al., 2023). 
 
-![image](https://github.com/user-attachments/assets/1f4d9a1b-65a9-4852-ba7b-12b44f495b88) Gambar 2.1 Paru-paru Pneumonia
+![image](https://github.com/user-attachments/assets/1f4d9a1b-65a9-4852-ba7b-12b44f495b88) 
 
-![image](https://github.com/user-attachments/assets/85f9c41a-4e2b-479c-8e4a-9491741474ba) Gambar 2.2 Paru-paru Normal
+Gambar 2.1 Paru-paru Pneumonia
+
+![image](https://github.com/user-attachments/assets/85f9c41a-4e2b-479c-8e4a-9491741474ba) 
+
+Gambar 2.2 Paru-paru Normal
 
 Pada penelitian oleh Zhang et al. (2020), para peneliti menjelaskan bahwa pneumonia, terutama yang disebabkan oleh infeksi bakteri, dapat menyebabkan infiltrasi berupa bayangan putih pada citra X-ray dada yang menunjukkan adanya cairan atau nanah di dalam alveoli. Hal ini berbeda dengan kondisi paru-paru yang sehat, di mana area paru-paru tampak jelas dengan pola gelap. Dengan adanya infiltrasi inflamasi, konsolidasi ini dapat terlihat sebagai pengaburan pada gambar X-ray, yang mempermudah identifikasi dan diagnosis pneumonia. Penelitian ini juga menyoroti pentingnya deteksi dini dengan pencitraan untuk memberikan penanganan yang cepat, terutama dalam kasus pneumonia yang lebih parah.
 
@@ -104,6 +108,7 @@ Meskipun CNN menunjukkan hasil yang menjanjikan dalam klasifikasi pneumonia, sal
 Secara keseluruhan, meskipun CNN terbukti sangat efektif dalam klasifikasi pneumonia, tantangan terkait dengan waktu pelatihan dan komputasi yang tinggi tetap menjadi perhatian. Oleh karena itu, penelitian lebih lanjut diperlukan untuk mengembangkan solusi seperti integrasi CNN dengan metode pembelajaran cepat seperti ELM, untuk meningkatkan efisiensi, akurasi, dan penerapan praktis dalam diagnosis otomatis pneumonia.
 
 ![image](https://github.com/user-attachments/assets/0e28889c-21f1-4a2f-b303-79343f9f5ccb)
+
 Gambar 2.3 Convolutional Neural Networks (CNN)
 
 ### 2.4 	VGG-16
@@ -120,6 +125,7 @@ Namun, meskipun VGG-16 telah terbukti sangat efektif dalam klasifikasi pneumonia
 Secara keseluruhan, VGG-16 terbukti sebagai model CNN yang efektif dan sangat berguna dalam klasifikasi citra medis, terutama untuk deteksi pneumonia. Namun, tantangan yang terkait dengan sumber daya komputasi dan waktu pelatihan yang lama tetap menjadi isu yang perlu diperhatikan. Oleh karena itu, terus dilakukan penelitian untuk meningkatkan efisiensi pelatihan dan optimasi model, dengan mempertimbangkan penggunaan teknik seperti transfer learning dan augmentasi data untuk meningkatkan kinerja VGG-16 dalam aplikasi dunia nyata, khususnya dalam diagnosis otomatis penyakit seperti pneumonia.
  
 ![image](https://github.com/user-attachments/assets/f9403727-4cfa-4af6-80e6-d5a024c8baa0)
+
 Gambar 2.4 Arsitektur Model VGG16 (Swastika, 2020)
 
 Input untuk arsitektur model VGG-16 terdiri dari gambar berukuran 224x224 piksel dengan 3 saluran warna (RGB). Pada lapisan konvolusi pertama (conv-1), terdapat 64 filter dengan ukuran kernel 3x3, diikuti oleh fungsi aktivasi ReLU dan operasi max pooling untuk mengurangi dimensi spasial. Selanjutnya, pada konvolusi kedua terdapat 128 filter, pada konvolusi ketiga terdapat 256 filter, dan pada konvolusi keempat serta kelima masing-masing menggunakan 512 filter. Di akhir jaringan, terdapat tiga lapisan fully connected (fc) dengan fungsi aktivasi ReLU, yang diikuti oleh lapisan output. (Swastika, 2020).
